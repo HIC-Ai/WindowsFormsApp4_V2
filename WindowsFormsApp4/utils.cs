@@ -5,12 +5,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Bunifu.UI.WinForms;
 
 namespace WindowsFormsApp4
 {
    public static class utils
     {
-        public override int GetTextHeight(Label lbl)
+        public static int GetTextHeight(Label lbl)
         {
             using (Graphics g = lbl.CreateGraphics())
             {
@@ -19,6 +20,9 @@ namespace WindowsFormsApp4
             }
         }
 
-
+        internal static int GetTextHeight(BunifuLabel label1)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

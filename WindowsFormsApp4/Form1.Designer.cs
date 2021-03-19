@@ -30,12 +30,12 @@ namespace WindowsFormsApp4
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Syncfusion.Windows.Forms.Tools.DigitalClockRenderer digitalClockRenderer1 = new Syncfusion.Windows.Forms.Tools.DigitalClockRenderer();
-            Syncfusion.Windows.Forms.Tools.ClockRenderer clockRenderer1 = new Syncfusion.Windows.Forms.Tools.ClockRenderer();
+            Syncfusion.Windows.Forms.Tools.DigitalClockRenderer digitalClockRenderer2 = new Syncfusion.Windows.Forms.Tools.DigitalClockRenderer();
+            Syncfusion.Windows.Forms.Tools.ClockRenderer clockRenderer2 = new Syncfusion.Windows.Forms.Tools.ClockRenderer();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            DevExpress.XtraScheduler.TimeRuler timeRuler1 = new DevExpress.XtraScheduler.TimeRuler();
-            DevExpress.XtraScheduler.TimeRuler timeRuler2 = new DevExpress.XtraScheduler.TimeRuler();
-            DevExpress.XtraScheduler.TimeRuler timeRuler3 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeRuler timeRuler4 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeRuler timeRuler5 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeRuler timeRuler6 = new DevExpress.XtraScheduler.TimeRuler();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnminimize = new Guna.UI.WinForms.GunaCircleButton();
             this.btnclose = new Guna.UI.WinForms.GunaCircleButton();
@@ -154,14 +154,14 @@ namespace WindowsFormsApp4
             this.clock1.ClockType = Syncfusion.Windows.Forms.Tools.ClockTypes.Digital;
             this.clock1.CurrentDateTime = new System.DateTime(2021, 3, 13, 19, 25, 4, 225);
             this.clock1.CustomTime = new System.DateTime(2021, 3, 18, 0, 4, 13, 597);
-            this.clock1.DigitalRenderer = digitalClockRenderer1;
+            this.clock1.DigitalRenderer = digitalClockRenderer2;
             this.clock1.DisplayDates = true;
             this.clock1.Location = new System.Drawing.Point(429, 157);
             this.clock1.MinimumSize = new System.Drawing.Size(75, 75);
             this.clock1.Name = "clock1";
             this.clock1.Now = new System.DateTime(((long)(0)));
             this.clock1.Remainder = new System.DateTime(2021, 3, 13, 19, 25, 4, 193);
-            this.clock1.Renderer = clockRenderer1;
+            this.clock1.Renderer = clockRenderer2;
             this.clock1.ShowClockFrame = false;
             this.clock1.ShowCustomTimeClock = false;
             this.clock1.ShowHourDesignator = false;
@@ -264,8 +264,8 @@ namespace WindowsFormsApp4
             this.schedulerControl1.Text = "schedulerControl1";
             this.schedulerControl1.Views.AgendaView.Enabled = false;
             this.schedulerControl1.Views.DayView.AllowScrollAnimation = false;
-            this.schedulerControl1.Views.DayView.TimeRulers.Add(timeRuler1);
-            this.schedulerControl1.Views.FullWeekView.TimeRulers.Add(timeRuler2);
+            this.schedulerControl1.Views.DayView.TimeRulers.Add(timeRuler4);
+            this.schedulerControl1.Views.FullWeekView.TimeRulers.Add(timeRuler5);
             this.schedulerControl1.Views.MonthView.Appearance.AdditionalHeaderCaption.Options.UseBackColor = true;
             this.schedulerControl1.Views.MonthView.Appearance.AdditionalHeaderCaption.Options.UseBorderColor = true;
             this.schedulerControl1.Views.MonthView.Appearance.AdditionalHeaderCaption.Options.UseFont = true;
@@ -273,7 +273,7 @@ namespace WindowsFormsApp4
             this.schedulerControl1.Views.MonthView.Appearance.AdditionalHeaderCaption.Options.UseImage = true;
             this.schedulerControl1.Views.MonthView.Appearance.AdditionalHeaderCaption.Options.UseTextOptions = true;
             this.schedulerControl1.Views.WeekView.Enabled = false;
-            this.schedulerControl1.Views.WorkWeekView.TimeRulers.Add(timeRuler3);
+            this.schedulerControl1.Views.WorkWeekView.TimeRulers.Add(timeRuler6);
             this.schedulerControl1.Views.YearView.UseOptimizedScrolling = false;
             this.schedulerControl1.Click += new System.EventHandler(this.schedulerControl1_Click_1);
             // 
