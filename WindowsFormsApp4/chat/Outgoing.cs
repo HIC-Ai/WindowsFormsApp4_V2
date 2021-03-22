@@ -43,9 +43,9 @@ namespace WindowsFormsApp4.chat
             AdjustHeight();
         }
 
-        private void Incomming_Load(object sender, EventArgs e)
+        private void Outgoing_DockChanged(object sender, EventArgs e)
         {
-
+            AdjustHeight();
         }
     }
 }

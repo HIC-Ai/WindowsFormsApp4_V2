@@ -38,38 +38,37 @@ namespace WindowsFormsApp4.chat
             this.bunifuUserControl2.AllowAnimations = false;
             this.bunifuUserControl2.AllowBorderColorChanges = false;
             this.bunifuUserControl2.AllowMouseEffects = false;
-            this.bunifuUserControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuUserControl2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.bunifuUserControl2.AnimationSpeed = 200;
             this.bunifuUserControl2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuUserControl2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(114)))), ((int)(((byte)(245)))));
-            this.bunifuUserControl2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
-            this.bunifuUserControl2.BorderRadius = 2;
+            this.bunifuUserControl2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
+            this.bunifuUserControl2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.bunifuUserControl2.BorderRadius = 20;
             this.bunifuUserControl2.BorderStyle = Bunifu.UI.WinForms.BunifuUserControl.BorderStyles.Solid;
-            this.bunifuUserControl2.BorderThickness = 1;
+            this.bunifuUserControl2.BorderThickness = 3;
             this.bunifuUserControl2.ColorContrastOnClick = 30;
             this.bunifuUserControl2.ColorContrastOnHover = 30;
             this.bunifuUserControl2.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuUserControl2.Image = null;
             this.bunifuUserControl2.ImageMargin = new System.Windows.Forms.Padding(0);
-            this.bunifuUserControl2.Location = new System.Drawing.Point(17, 3);
+            this.bunifuUserControl2.Location = new System.Drawing.Point(9, 3);
             this.bunifuUserControl2.Name = "bunifuUserControl2";
             this.bunifuUserControl2.ShowBorders = true;
-            this.bunifuUserControl2.Size = new System.Drawing.Size(537, 103);
+            this.bunifuUserControl2.Size = new System.Drawing.Size(444, 64);
             this.bunifuUserControl2.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
             this.bunifuUserControl2.TabIndex = 0;
             // 
             // Label2
             // 
-            this.Label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(114)))), ((int)(((byte)(245)))));
+            this.Label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.Label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
             this.Label2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Label2.Location = new System.Drawing.Point(26, 14);
+            this.Label2.Location = new System.Drawing.Point(34, 14);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(510, 82);
+            this.Label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Label2.Size = new System.Drawing.Size(401, 37);
             this.Label2.TabIndex = 2;
             this.Label2.Text = "وعليكم السلام ";
             this.Label2.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.AntiAlias;
@@ -82,8 +81,8 @@ namespace WindowsFormsApp4.chat
             this.Controls.Add(this.Label2);
             this.Controls.Add(this.bunifuUserControl2);
             this.Name = "Outgoing";
-            this.Size = new System.Drawing.Size(563, 124);
-            this.Load += new System.EventHandler(this.Incomming_Load);
+            this.Size = new System.Drawing.Size(472, 70);
+            this.DockChanged += new System.EventHandler(this.Outgoing_DockChanged);
             this.ResumeLayout(false);
 
         }

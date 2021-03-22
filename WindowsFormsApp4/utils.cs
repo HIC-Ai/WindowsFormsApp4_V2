@@ -20,9 +20,9 @@ namespace WindowsFormsApp4
             }
         }
 
-        internal static int GetTextHeight(BunifuLabel label1)
-        {
-            throw new NotImplementedException();
-        }
+        //internal static int GetTextHeight(BunifuLabel label1)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

@@ -16,6 +16,7 @@ namespace WindowsFormsApp4
         public Form1()
         {
             InitializeComponent();
+
             schedulerControl1.Start = DateTime.Now;
         }
         int counter = 0;
@@ -85,7 +86,7 @@ namespace WindowsFormsApp4
 
         private void schedulerControl1_Click_1(object sender, EventArgs e)
         {
-
+            
         }
 
         private void gunaCircleButton1_Click_1(object sender, EventArgs e)
@@ -128,6 +129,8 @@ namespace WindowsFormsApp4
 
         private void Form1_Load(object sender, EventArgs e)
         {
+   
+
             txt = label1.Text;
             len = txt.Length;
             label1.Text = "";
@@ -140,6 +143,11 @@ namespace WindowsFormsApp4
         }
 
         private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }

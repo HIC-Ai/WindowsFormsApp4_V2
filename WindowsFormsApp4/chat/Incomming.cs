@@ -14,20 +14,20 @@ namespace WindowsFormsApp4.chat
         {
             get
             {
-                return Label1.Text;
+                return Label3.Text;
             }
 
             set
             {
-               Label1.Text = value;
+               Label3.Text = value;
                 AdjustHeight();
             }
         }
         void AdjustHeight()
         {
             gunaCirclePictureBox1.Location = new Point(4, 3);
-            Label1.Height = utils.GetTextHeight(Label1) + 10;
-            bunifuUserControl1.Height = Label1.Top + bunifuUserControl1.Top + Label1.Height;
+            Label3.Height = utils.GetTextHeight(Label3) + 10;
+            bunifuUserControl1.Height = Label3.Top + bunifuUserControl1.Top + Label3.Height;
             this.Height = bunifuUserControl1.Bottom + 10;
 
         }
@@ -37,11 +37,6 @@ namespace WindowsFormsApp4.chat
         private void Incomming_Resize(object sender, EventArgs e)
         {
             AdjustHeight();
-        }
-
-        private void Incomming_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
